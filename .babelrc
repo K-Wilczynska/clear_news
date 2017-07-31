@@ -1,0 +1,11 @@
+{
+    "presets": [
+        "babel-preset-env",
+        "react"
+    ],
+    "plugins": [
+        "transform-react-inline-elements",
+        "transform-react-constant-elements"
+    ]
+}
+
