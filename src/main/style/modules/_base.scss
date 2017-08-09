@@ -1,0 +1,23 @@
+$main-width: 1000px;
+
+$accent-color: rgb(41, 171, 226);
+$bg-color-dark: rgb(51, 51, 51);
+$bg-color-medium: rgb(242, 242, 242);
+$bg-color-light: rgb(255, 255, 255);
+
+$font-color-light: rgb(255, 255, 255);
+$font-color-medium: rgb(77, 77, 77);
+$font-color-dark: rgb(0, 0, 0);
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-width{
+    width: $main-width;
+    margin: 0 auto;
+}
+

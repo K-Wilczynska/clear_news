@@ -1,0 +1,50 @@
+@import "../modules/base";
+
+.bar {
+    background-color: $bg-color-dark;
+    width: 100%;
+    color: $font-color-light;
+}
+
+.bar-container{
+    height: 100%;
+}
+
+.bar-wrap {
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+}
+
+.bar-wrap-socials{
+    float: right;
+}
+
+.bar-list {
+    list-style: none;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+
+    li {
+        padding: 0 20px;
+    }
+}
+
+.bar-top {
+    height: 50px;
+}
+
+.bar-footer {
+    height: 85px;
+}
+
+
+.social-icons {
+    float: right;
+    margin-right: 20px;
+
+    i{
+        margin: 5px;
+    }
+}
