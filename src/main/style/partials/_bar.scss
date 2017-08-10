@@ -16,7 +16,7 @@
     align-items: center;
 }
 
-.bar-wrap-socials{
+.bar-wrap-right{
     float: right;
 }
 
@@ -27,11 +27,11 @@
     align-items: center;
 
     li {
-        padding: 0 20px;
+        padding: 0 30px;
     }
 }
 
-.bar-top {
+.bar-header {
     height: 50px;
 }
 
@@ -41,8 +41,7 @@
 
 
 .social-icons {
-    float: right;
-    margin-right: 20px;
+    margin-right: 30px;
 
     i{
         margin: 5px;

@@ -3,7 +3,7 @@ import React from "react";
 const BarSocialMediaItem = (props) => {
 
     return(
-        <div className="bar-wrap bar-wrap-socials">
+        <div className="bar-wrap bar-wrap-right">
             <div className="social-icons">
                 <i className="fa fa-facebook" aria-hidden="true"> </i>
                 <i className="fa fa-instagram" aria-hidden="true"> </i>

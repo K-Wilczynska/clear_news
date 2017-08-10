@@ -1,17 +1,33 @@
-import React from "react";
+import React, { Component } from "react";
 import BarCommonItem from "./bar_common_item";
 import BarSocialMediaItem from "./bar_social_media_item";
+import BarCopyrightItem from "./bar_copyright_item";
 
-const Bar = (props) => {
+import { HEADER, FOOTER } from "../../../configuration/constants";
 
-    return (
-        <div className={props.type === "top" ? "bar bar-top" : "bar bar-footer"}>
-            <div className="main-width bar-container">
-                <BarCommonItem/>
-                <BarSocialMediaItem/>
+export default class Bar extends Component {
+
+    renderDynamicItem(){
+
+        switch(this.props.type){
+            case HEADER:
+                return <BarSocialMediaItem />;
+            case FOOTER:
+                return <BarCopyrightItem />;
+            default:
+                return <BarSocialMediaItem />;
+        }
+    }
+
+    render () {
+        return (
+            <div className={this.props.type === HEADER ? "bar bar-header" : "bar bar-footer"}>
+                <div className="main-width bar-container">
+                    <BarCommonItem type={this.props.type}/>
+                    {this.renderDynamicItem()}
+                </div>
             </div>
-        </div>
-    );
+        );
+    }
 };
 
-export default Bar;
